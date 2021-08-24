@@ -11,6 +11,8 @@ int executen(char **d, char **a)
 	pid_t pid = 0;
 	int status;
 
+	if (a[0] == NULL)
+		return (0);
 	pid = fork();
 
 	if (pid == 0)
@@ -24,6 +26,7 @@ int executen(char **d, char **a)
 				break;
 			}
 		}
+		printf("IT DOES NOT WORK!\n");
 		exit(98);
 	}
 		wait(&status);
