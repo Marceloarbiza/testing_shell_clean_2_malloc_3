@@ -10,7 +10,7 @@ int executen(char **d, char **a)
 	int i = 0, axs = 0;
 	pid_t pid = 0;
 	int status;
-
+		
 	if (a[0] == NULL)
 		return (0);
 	pid = fork();
